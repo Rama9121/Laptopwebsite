@@ -2,22 +2,17 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./header.css";
-import logo from "../Assets/logo1.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand me-auto" to="/">
-          <img
-            src={logo}
-            alt="Logo"
-            width="50"
-            height="50"
-            className="d-inline-block align-text-top"
-          />
-        </Link>
+       
+           <Link to="/" className="logo" data-text="Awesome">
+       <span className="actual-text">&nbsp;ASCENT&nbsp;</span>
+          <span aria-hidden="true" className="hover-text">&nbsp;ASCENT&nbsp;</span>
+             </Link>
 
         <button
           className="navbar-toggler"

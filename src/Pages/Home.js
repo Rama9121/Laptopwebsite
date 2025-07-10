@@ -5,6 +5,7 @@ import laptopImage from "../Assets/laptopImage.png";
 
 const Home = () => {
   return (
+    <div className='body'>
     <section className="hero">
       <div className="hero-content">
         <h1>
@@ -19,6 +20,7 @@ const Home = () => {
         <img src={laptopImage} alt="Laptop" />
       </div>
     </section>
+    </div>
   );
 };
 
